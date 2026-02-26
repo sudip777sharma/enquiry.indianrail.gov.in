@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Your Train Coach Position</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        background: #ffffff;
+        margin: 0;
+      }
+
+      /* ===== PAGE WRAPPER ===== */
+      .page {
+        width: 96%;
+        margin: 15px auto;
+        /* background: #efefef;
+    border: 1px solid #b5c7d3; */
+        padding-bottom: 40px;
+      }
+
+      /* ===== HEADER ===== */
+      .header {
+        background: #f7f7f7;
+        /* border-bottom: 2px solid #9fb6c3; */
+        border-radius: 8px;
+        padding: 4px 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .header-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .title {
+        font-size: 28px;
+        color: #222;
+        font-weight: 500;
+      }
+
+      .logo-left {
+        height: 42px;
+      }
+
+      .logo-right {
+        height: 52px;
+      }
+
+      /* ===== CONTENT AREA ===== */
+      .content {
+        padding: 1px 1px;
+        text-align: left; /* ⭐ IMPORTANT */
+      }
+
+      /* ===== ERROR TEXT ===== */
+      .error-msg {
+        color: #ff0000; /* ⭐ BRIGHT RED restored */
+        font-size: 22px;
+        font-weight: bold;
+        line-height: 1.35;
+        margin-bottom: 18px;
+        margin-top: 10px;
+      }
+
+      /* ===== BUTTON ===== */
+      .reload-btn {
+        background: #4caf50;
+        color: #fff;
+        border: 1px solid #2e7d32;
+        padding: 8px 14px;
+        font-size: 14px;
+        border-radius: 6px;
+        cursor: pointer;
+        margin-bottom: 18px;
+      }
+
+      .reload-btn:hover {
+        background: #43a047;
+      }
+
+      /* ===== RAILONE BOX ===== */
+      .railone-box {
+        width: 520px;
+        /* background: #f4f4f4; */
+        /* border: 2px solid #6cc0b7; */
+        border-radius: 28px;
+        padding: 14px;
+      }
+
+      .railone-inner {
+        text-align: center;
+      }
+
+      .railone-logo {
+        width: 42px;
+        margin-bottom: 6px;
+      }
+
+      .railone-title {
+        font-weight: bold;
+        font-size: 16px;
+        margin-bottom: 6px;
+      }
+
+      .railone-desc {
+        font-size: 14px;
+        margin-bottom: 6px;
+      }
+
+      .download-links a {
+        color: #5a2ca0;
+        font-weight: bold;
+        text-decoration: none;
+        margin: 0 6px;
+        font-size: 14px;
+      }
+
+      .store-icons {
+        margin-top: 6px;
+      }
+
+      .store-icons img {
+        height: 28px;
+        margin-right: 6px;
+      }
+
+      /* ===== NOTE ===== */
+      .note {
+        color: #ff0000;
+        font-size: 13px;
+        margin-top: 10px;
+      }
+
+      .status-link {
+        display: inline-block;
+        margin-top: 6px;
+        color: #0047ff;
+        font-size: 14px;
+        text-decoration: none;
+      }
+
+      /* ===== MOBILE ===== */
+      @media (max-width: 600px) {
+        .railone-box {
+          width: 100%;
+        }
+
+        .title {
+          font-size: 20px;
+        }
+
+        .error-msg {
+          font-size: 18px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="page">
+      <!-- HEADER -->
+      <div class="header">
+        <div class="header-left">
+          <img src="emblem_india.png" class="logo-left" />
+          <div class="title">National Train Enquiry System</div>
+        </div>
+        <img src="ir.png" class="logo-right" />
+      </div>
+
+      <!-- CONTENT -->
+      <div class="content">
+        <div class="error-msg">
+          Coach position currently not available for train 12262 (Start Date :
+          28-May-2025) at HWH.<br />
+          Please try again in some time.
+        </div>
+
+        <button class="reload-btn" onclick="location.reload()">
+          Reload Page
+        </button>
+
+        <!-- RailOne Box -->
+        <div class="railone-box">
+          <div class="railone-inner">
+            <img src="ROne.png" class="railone-logo" />
+
+            <div class="railone-title">
+              RailOne - Official Indian Railways Super App!
+            </div>
+
+            <div class="railone-desc">
+              Book tickets, check train status, track PNR & order food - All in
+              one secure app.
+            </div>
+
+            <div class="download-links" style="display: flex; align-items: center;">
+              <div style="display: flex;  align-items: center;">
+                <div class="store-icons">
+                  <img src="Google_Play_logo.png" />
+                </div>
+                <a href="https://play.google.com/store/apps/details?id=org.cris.aikyam">Download Android App</a>
+              </div>
+              |
+              <div style="display: flex;  align-items: center;">
+                <div class="store-icons">
+                  <img src="apple.png" />
+                </div>
+                <a href="https://apps.apple.com/in/app/railone/id6473384334">Download iOS App</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="note">
+          Note - Data shown with (*) are dynamic in nature and may change.
+        </div>
+
+        <a class="status-link" href="https://enquiry.indianrail.gov.in/mntes/">Train Running Status &gt;&gt;</a>
+      </div>
+    </div>
+  </body>
+</html>
