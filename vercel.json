@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://enquiry.indianrail.gov.in/mntes/",
+      "permanent": false
+    }
+  ]
+}
